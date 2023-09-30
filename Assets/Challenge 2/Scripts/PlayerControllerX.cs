@@ -26,11 +26,14 @@ public class PlayerControllerX : MonoBehaviour
     }
     void SpawnDog()
     {
+        // Spawns dog
         Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+        // Disables further dog spawning
         canSpawnDog = false;
     }
     private void ResetSpawnDog()
     {
+        // Enables dog spawning again
         canSpawnDog = true;
     }
 }
